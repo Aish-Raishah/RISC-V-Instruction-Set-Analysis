@@ -25,5 +25,5 @@ This project demonstrates the simulation and analysis of basic RISC-V instructio
 
 ### Author
 **Nur Aishah Binti Mohd Yussof**  
-Bachelor of Information Technology (Hons)  
-Universiti Tun Hussein Onn Malaysia  
+BACHELOR OF SCIENCE(Hons.) IN INFORMATION TECHNOLOGY
+MALAYSIA UNIVERSITY of SCIENCE and TECHNOLOGY
