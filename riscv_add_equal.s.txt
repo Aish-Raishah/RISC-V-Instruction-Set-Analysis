@@ -1,0 +1,30 @@
+# Simple RISC-V Program: Add Two Numbers and Compare
+
+.data
+msg_equal: .asciiz "Numbers are equal\n"
+msg_notequal: .asciiz "Numbers are not equal\n"
+
+.text
+main:
+    li t0, 5          # Load immediate 5 into register t0
+    li t1, 5          # Load immediate 5 into register t1
+    add t2, t0, t1    # t2 = t0 + t1  (5 + 5 = 10)
+    
+    beq t0, t1, equal # If t0 == t1, jump to label 'equal'
+    j notequal        # Else jump to 'notequal'
+
+equal:
+    li a0, 4
+    la a1, msg_equal
+    ecall
+    j end
+
+notequal:
+    li a0, 4
+    la a1, msg_notequal
+    ecall
+
+end:
+    li a0, 10
+    ecall              # Exit program
+
